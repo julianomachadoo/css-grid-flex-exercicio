@@ -31,32 +31,32 @@
     }
 }
 
-/* @media(min-width: 1440px) {
+@media(min-width: 1440px) {
     .categorias {
         display: grid;
+        gap: 1rem 1.5rem;
+        grid-template-areas: 
+        "titulo titulo"
+        "lista destaques"
+        "lista imagem"
+        ;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr auto;
-        grid-template-areas: 
-        "a1 a2"
-        "b1 b2"
-        "c1 c2"
-        ;
-        gap: 1rem 1.5rem;
     }
 
     .categorias__titulo {
-        grid-area: a1;
+        grid-area: titulo;
     }
 
     .categorias__lista {
-        grid-area: b1;
+        grid-area: lista;
     }
 
     .categorias__destaques {
-        grid-area: b2;
+        grid-area: destaques;
     }
 
     .categorias__imagem {
-        grid-area: c2;
+        grid-area: imagem;
     }
-} */
+}
