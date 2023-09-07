@@ -1,8 +1,8 @@
 .banner {
     display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
-    gap: 1rem;
 }
 
 .banner img:nth-child(1) {
@@ -23,9 +23,9 @@
 
 @media(min-width: 720px) {
     .banner {
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: calc(50% - 0.75rem);
         grid-template-rows: 1fr 1fr;
-        gap: 1.75rem;
+        column-gap: 1.5rem;
     }
     
     .banner img:nth-child(1) {

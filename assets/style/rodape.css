@@ -1,0 +1,13 @@
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__titulo {
+    margin: 1rem 0 .5rem 0;
+}
+
+.rodape__logo {
+    align-self: flex-end;
+}

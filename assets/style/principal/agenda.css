@@ -1,0 +1,35 @@
+.agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    justify-content: center;    
+}
+
+.agenda__item {
+    display: grid;
+    flex-grow: 1;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    ;
+    max-width: 400px;
+}
+
+.agenda__item img {
+    grid-area: a;
+}
+
+.agenda__informacoes {
+    grid-area: b;
+}
+
+.agenda__atracao {
+    grid-area: c;
+}
+
+
+@media(min-width: 720px) {
+    .agenda__lista {
+        justify-content: end;
+    }
+}
